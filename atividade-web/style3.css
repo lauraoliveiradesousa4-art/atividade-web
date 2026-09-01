@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f4f2ff;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    margin: 94px 15px 13px 15px;
+    padding: 22px;
+    background-color: #7800e8;
+    border: 1px solid #c58aff;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    margin: 0 0 8px 0;
+    font-size: 20px;
+}
+
+header p {
+    margin: 0;
+    font-size: 10px;
+}
+
+
+/* Conteúdo principal */
+main {
+    margin: 0 15px 13px 15px;
+    padding: 14px;
+    background-color: white;
+    border: 1px solid #d4c5ff;
+}
+
+
+/* Seções */
+section {
+    padding: 20px 10px;
+    margin-bottom: 13px;
+    border: 1px solid #c58aff;
+    background-color: #faf5ff;
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
+section h2 {
+    margin: 0 0 10px 0;
+    color: #7800e8;
+    font-size: 14px;
+}
+
+section p {
+    margin: 0;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+
+/* Destaque do nome */
+section strong {
+    color: #e0005a;
+}
+
+
+/* Habilidades */
+.habilidades {
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+    margin-top: 4px;
+}
+
+.habilidades span {
+    background-color: #7800e8;
+    color: white;
+    padding: 6px 9px;
+    font-size: 9px;
+}
+
+
+/* Rodapé */
+footer {
+    margin: 0 15px;
+    padding: 20px;
+    background-color: #260047;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 9px;
+}
