@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre Flores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h2>Entre Flores</h2>
+
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+
+            <button id="temaBtn">🌙</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="inicio" class="hero">
+            <div class="hero-texto">
+                <p class="subtitulo">UM OLHAR SOBRE O TEMPO</p>
+
+                <h1> Entre Flores</h1>
+
+                <p>
+                    A beleza das flores também está em suas mudanças.
+                    Cada momento revela uma nova forma, uma nova cor 
+                    e uma nova história.
+                </p>
+
+                <button id="galeriaBtn">Conheça o projeto</button>
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <div>
+                <p class="subtitulo">SOBRE O PROJETO</p>
+
+                <h2>Flores, tempo e transformação</h2>
+
+                <p>
+                    Entre Flores é uma experiência visual dedicada a observar
+                    as transformações de uma flor ao longo do tempo.
+                    Através da fotografia, pequenos detalhes ganham destaque
+                    e mostram que a beleza também existe na mudança. Esse projeto 
+                    está sendo realizado para o curso de fotografia que eu faço e 
+                    decidi trazer ele pra cá.
+                </p>
+            </div>
+        </section>
+
+
+        <section id="galeria" class="galeria">
+            <p class="subtitulo">GALERIA</p>
+
+            <h2>Momentos entre flores</h2>
+
+            <div class="galeria-container">
+
+                <div class="foto">
+                    <img src="imagens/delicadeza.jpg" alt="Flor em detalhe">
+                    <h3>Delicadeza</h3>
+                    <p>Os pequenos detalhes de uma flor</p>
+                </div>
+
+                <div class="foto">
+                    <img src="imagens/tempo.jpg" alt="Flor ao longo do tempo">
+                    <h3>Tempo</h3>
+                    <p>As mudanças que acontecem ao longo do dia.</p>
+                </div>
+
+                <div class="foto">
+                    <img src="imagens/transformaçao.jpg" alt="Flor em transformação">
+                    <h3>Transformação</h3>
+                    <p>Uma nova forma de perceber a natureza.</p>
+                </div>
+
+            
+            </div>
+        </section>
+
+
+        <section class="momentos">
+
+            <p class="subtitulo">OBSERVE</p>
+
+            <h2>Uma flor, diferentes momentos</h2>
+
+            <div class="botoes-momentos">
+                <button class="momentoBtn" data-momento="manha">Manhã</button>
+                <button class="momentoBtn" data-momento="tarde">Tarde</button>
+                <button class="momentoBtn" data-momento="noite">Noite</button>
+            </div>
+
+            <div id="textoMomento">
+                Escolha um momento para descobrir mais.
+            </div>
+        </section>
+
+
+        <section id="contato" class="contato">
+
+            <p class="subtitulo">CONTATO</p>
+
+            <h2>Deixe uma mensagem</h2>
+
+            <form id="formulario">
+
+                <input
+                    type="text"
+                    id="nome"
+                    placeholder="Seu nome"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Seu e-mail"
+                    required
+                >
+
+                <textarea
+                    id="mensagem"
+                    placeholder="Sua mensagem"
+                    required
+                ></textarea>
+
+                <button type="submit">Enviar mensagem</button>
+
+            </form>
+
+            <p id="mensagemForm"></p>
+
+        </section>
+    </main> 
+
+    <footer>
+        <p>© 2026 Entre Flores | Projeto acadêmico</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
