@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo interativo de produtos">
+    <title>Vitrine | Catálogo de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container topo">
+            <a href="#" class="logo">vitrine<span>.</span></a>
+
+            <nav aria-label="Navegação principal">
+                <button id="btnTodos" class="nav-btn ativo">Produtos</button>
+                <button id="btnFavoritos" class="nav-btn">
+                      ♥ Favoritos <span id="contadorFavoritos">0</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="apresentacao">
+            <p class="subtitulo">DESCUBRA SUA PRÓXIMA ESCOLHA</p>
+            <h1>Encontre algo que <span>combine com você.</span></h1>
+            <p class="descricao">
+                Explore nossa seleção de produtos e salve seus favoritos.                
+            </p>
+        </section>
+
+        <section class="area-pesquisa" aria-label="Pesquisar produtos">
+            <form id="formPesquisa">
+                <label for="pesquisa" class="sr-only">Pesquisar produtos</label>
+                <input
+                    type="search"
+                    id="pesquisa"
+                    placeholder="O que você está procurando?"
+                >
+                <button type="submit" class="btn-pesquisar">Pesquisar</button>
+            </form>
+        </section>
+
+        <section class="secao-produtos">
+            <div class="titulo-secao">        
+                <div>
+                     <p class="subtitulo">NOSSA SELEÇÃO</p>
+                     <h2 id="tituloLista">Todos os produtos</h2>
+                </div>
+                <span id="totalProdutos"></span>
+            </div>
+
+            <p id="mensagem" role="status" aria-live="polite">
+                Carregando produtos...
+            </p>
+
+            <div id="listaProdutos" class="grade-produtos"></div>
+        </section>
+    </main>
+
+    <dialog id="modalDetalhes" class="modal">
+        <button id="fecharModal" class="fechar-modal" aria-label="Fechar">
+            &times;
+        </button>
+        <div id="conteudoDetalhes"></div>
+    </dialog>
+
+    <footer>
+        <div class="container">
+            <a href="#" class="logo">vitrine<span>.</span></a>
+            <p>Catálogo interativo de produtos desenvolvido para Programação Web.</p>
+        </div>
+    </footer>
+</body>
+</html>
